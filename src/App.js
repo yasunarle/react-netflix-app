@@ -5,14 +5,18 @@ import "./App.css"
 import { requests } from "./plugins/axios"
 // Components
 import Row from "./components/Row"
+import TheBanner from "./components/common/TheBanner"
 
 function App() {
   return (
-    <div className="App">
-      <h1>testify🚀🔥</h1>
+    <div className="app">
+      {/* Nav */}
+      {/* Banner */}
+      <TheBanner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
