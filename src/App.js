@@ -6,12 +6,12 @@ import { requests } from "./plugins/axios"
 // Components
 import Row from "./components/Row"
 import TheBanner from "./components/common/TheBanner"
+import TheNav from "./components/common/TheNav"
 
 function App() {
   return (
     <div className="app">
-      {/* Nav */}
-      {/* Banner */}
+      <TheNav />
       <TheBanner />
       <Row
         title="NETFLIX ORIGINALS"
