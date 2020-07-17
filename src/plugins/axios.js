@@ -12,10 +12,10 @@ export const requests = {
   fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 }
 
-const baseUrl = "https://api.themoviedb.org/3/"
+const baseURL = "https://api.themoviedb.org/3/"
 
 const instance = axios.create({
-  baseURL: baseUrl,
+  baseURL,
 })
 
 export default instance
